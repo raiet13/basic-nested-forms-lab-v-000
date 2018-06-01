@@ -18,8 +18,7 @@ class RecipesController < ApplicationController
     # puts "Params = #{params}"
     Recipe.create(recipe_params)
     # puts "Params = #{recipe_params}"
-    puts "#{recipe_path}"
-    redirect_to recipe_path
+    redirect_to recipes_path
   end
 
   private
